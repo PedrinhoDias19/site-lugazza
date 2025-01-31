@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles_about.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Sobre Nós</title>
+</head>
+<body>
+
+<style>
+.card {
+    border: 0.2vh solid black;
+    box-shadow: 1vh 1vh 2vh black;
+    color: black;
+    font-weight: bold;
+    font-family: "Raleway";
+    transition: transform 0.8s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10%);
+    background-color: gold;
+    border-color: gold;
+    border: 1vh solid gold;
+    transition: border 0.5s;
+    transition: background-color 0.8s;
+    transition: border-color 0.5s;
+}
+
+.card-title {
+    font-size: 5vh;
+    font-family: "Raleway";
+    margin-bottom: 1vh;
+}
+
+.card-body {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+.button_card_bottom {
+    font-size: 2.5vh;
+    font-family: "Raleway";
+    color: black;
+    margin-top: 1vh;
+    text-decoration: none;
+}
+
+.button_card_bottom:hover {
+    color: aquamarine !important;
+    text-decoration: underline;
+    transition: font-size 0.6s;
+}
+
+.container_text_main_3 {
+    padding-top: 40vh;
+    font-size: 15vh;
+    text-shadow: black 0 -0.5vh;
+    font-family: "Playfair";
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+    margin-bottom: 70vh;
+    padding-left: 40vh;
+}
+
+.title {
+    color: white;
+    font-size: 5vh;
+    text-align: center;
+}
+
+header {
+    background-color: #470705;
+    font-size: 2.6vh;
+}
+
+.carousel-caption {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.col {
+    padding: 10vh;
+}
+
+.row {
+    margin: 10vh;
+}
+
+a.card {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilo para a galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40vh, 1fr)); /* Mínimo de 20vh para as colunas */
+    gap: 2vh; /* Espaçamento entre as imagens */
+    padding: 2vh;
+}
+
+.gallery img {
+    width: 100%;
+    height: 30vh; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Assegura que a imagem cubra completamente o espaço sem distorcer */
+    cursor: pointer;
+
+}
+
+.footer {
+        background-color: #470705;
+        color: white;
+        padding: 4vh 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footer-column {
+        flex: 1;
+        min-width: 20vh;
+        margin: 1vh 2vh;
+    }
+
+    .footer-column h5 {
+        font-family: "Raleway", sans-serif;
+        font-size: 2.5vh;
+        margin-bottom: 2vh;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 1vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-column ul li a {
+        font-family: "Raleway", sans-serif;
+        font-size: 2vh;
+        color: #ffffff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: transform 0.5s ease, color 0.5s ease;
+        transform-origin: center;
+    }
+
+    .footer-column ul li a img {
+        margin-right: 1vh;
+        transition: transform 0.5s ease;
+        transform-origin: center;
+    }
+
+    .footer-column ul li a:hover img,
+    .footer-column ul li a:hover {
+        transform: scale(1.3);
+        color: #FF9F00;
+    }
+
+    .link_adress_footer {
+
+        color: aliceblue;
+        text-decoration: none;
+       
+    }
+
+    .link_adress_footer:hover {
+
+        color: gold;
+        transition: color 0.8s ease-in-out;
+    }
+
+    .map-container {
+        display: flex;
+        justify-content: center;
+       padding-top: 4vh;
+        padding-bottom: 4vh;
+        background-color: #470705;
+    }
+
+    .map-container iframe {
+        border-radius: 1vh;
+        width: 90%;
+        height: 60vh;
+        border: 0;
+    }
+
+
+</style>
+
+<header>
+    <nav class="menu">
+        <a class="menu_item_img" href="index.html"><img class="image" src="img/logo/logo_lugazza.png" width="20%"></a>
+        <a class="menu_item" href="index.html">Home</a>
+        <a class="menu_item" href="about.html">Sobre Nós</a>
+        <a class="menu_item" href="#">Orçamentos</a>
+        <a class="menu_item" href="login.html">Área do Cliente</a>
+    </nav>
+</header>
+
+<main>
+
+  <section class="container_main_about_1">
+    <img class="img_about_main" src="img/logo/logo_fundo_preto.jfif" width="100%" height="100%">
+    <div class="container_text_main_about">
+       <h1 class="container_main_title_about">Sobre Nós</h1>
+       <p class="container_text__about_1">
+          Há 12 anos, nasceu a Lugazza Casas Exclusivas de um sonho singular: o desejo de Rosângela Dias por uma morada própria. Diante dos desafios enfrentados, ela decidiu transformar não só sua realidade, mas a de outras famílias, unindo-se à sua filha e genro, arquitetos de profissão. Surgia assim a Lugazza, cuja essência é proporcionar uma experiência única, guiando os clientes por um caminho repleto de cuidado e carinho durante todo o processo. Rosângela destaca: "Envolvemos nosso cliente em um laço de cetim durante a obra, para que vejam apenas a beleza refletida nos sonhos se tornando realidade". 
+       </p>
+       <button type="button" class="btn-saiba-mais" data-bs-toggle="modal" data-bs-target="#sobreNosModal">LEIA MAIS →</button>
+    </div>
+  </section>
+ 
+ <!-- Modal -->
+ <div class="modal fade" id="sobreNosModal" tabindex="-1" aria-labelledby="sobreNosModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-lg">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="sobreNosModalLabel">Sobre Nós - Detalhes</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+        <p>Há 12 anos, nasceu a Lugazza Casas Exclusivas de um sonho singular: o desejo de Rosângela Dias por uma morada própria. Diante dos desafios enfrentados, ela decidiu transformar não só sua realidade, mas a de outras famílias, unindo-se à sua filha e genro, arquitetos de profissão. Surgia assim a Lugazza, cuja essência é proporcionar uma experiência única, guiando os clientes por um caminho repleto de cuidado e carinho durante todo o processo. Rosângela destaca: "Envolvemos nosso cliente em um laço de cetim durante a obra, para que vejam apenas a beleza refletida nos sonhos se tornando realidade".</p>
+
+        <h5 class="title_modal_body">Valores da Empresa</h5>
+        <p>A missão da Lugazza é ir além da construção civil e dos projetos de arquitetura. É entregar não apenas casas, mas sim experiências exclusivas, com um toque de inovação e atenção aos detalhes. Nosso compromisso é cuidar de cada etapa, desde aprovação de crédito até a organização da mudança, proporcionando um atendimento exclusivo e personalizado. Essa dedicação é uma expressão do propósito que Deus designou à nossa jornada.</p>
+
+        <h5  class="title_modal_body">Produtos e Serviços</h5>
+        <p>A Lugazza Casas Exclusivas destaca-se na construção civil e projetos de arquitetura, oferecendo um padrão de qualidade elevado. Acompanhamos nossos clientes em todas as fases do processo, desde as obras até as documentações, compras, projetos, e até mesmo a organização da mudança. Nossa atuação abrange tudo o que o cliente necessita, assegurando uma entrega completa e satisfatória.</p>
+
+        <h5  class="title_modal_body">Clientes</h5>
+        <p>Ao longo desses 12 anos, mais de 150 famílias confiaram na Lugazza para realizar o sonho de ter um lar exclusivo. Cada cliente é tratado com respeito e dedicação, refletindo em parcerias duradouras e satisfação plena. Nossa história é marcada pelo reconhecimento daqueles que permitiram que a Lugazza fizesse parte de suas vidas.</p>
+
+        <h5 class="title_modal_body">Diferencial</h5>
+        <p>O grande diferencial da Lugazza Casas Exclusivas vai além da construção dos projetos. Nosso compromisso é acompanhar o cliente do começo ao fim, proporcionando um serviço personalizado e único. Desde a aprovação de crédito até a organização da mudança, cuidamos de cada detalhe, garantindo que o cliente se sinta envolvido e amparado em todas as etapas. Esse comprometimento é o que nos destaca e nos permite oferecer um atendimento exclusivo e diferenciado.</p>
+
+        <p>Ao escolher a Lugazza Casas Exclusivas, você opta por uma jornada de construção e transformação guiada por profissionais experientes, dedicadas a tornar realidade os sonhos de sua casa própria. Sua busca por excelência na construção civil e projetos de arquitetura encontra aqui o parceiro ideal. Envolva-se no nosso compromisso de entregar mais do que casas, entregamos experiências únicas. Bem-vindo à Lugazza, onde cada detalhe é construído com alicerces de qualidade, carinho e exclusividade.</p>
+      </div>
+     </div>
+   </div>
+ </div>
+
+<section class="container_main_about_2">
+    <div class="container_text_main_about">
+        <h2 class="container_main_title_about_2">Nossos serviços</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-2">
+          <!-- Primeiro Card -->
+          <div class="col">
+            <a class="card h-100" data-bs-toggle="offcanvas" href="#offcanvas1" role="button" aria-controls="offcanvas1">
+              <img src="img/cards/investimentos.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Investimentos Imobiliários</h5>
+                <p class="card-text">A consultar</p>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary" type="button">Ver mais</button>
+                </div>
+              </div>
+            </a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1" aria-labelledby="offcanvasLabel1">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasLabel1">Investimentos Imobiliários</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <img src="img/cards/investimentos.jfif">
+                  <p> Nossos Investimentos Imobiliários oferecem projetos e construções personalizados para investidores, com foco em qualidade e retorno financeiro garantido. Com uma equipe experiente e parceiros confiáveis, garantimos que seu investimento imobiliário seja um sucesso, desde a concepção até a negociação de venda. </p> 
+
+                   <p> <strong>Detalhes Técnicos:</strong></p>
+                    <ul>
+                        <li>Projetos e construções personalizados para investidores</li>
+                        <li>Equipe experiente e parceiros confiáveis</li>
+                        <li>Garantia de qualidade e retorno financeiro</li>
+                    </ul>
+
+                    <strong>Benefícios:</strong>
+                    <ul>
+                        <li>Investimento seguro e rentável</li>
+                        <li>Projetos e construções de alta qualidade</li>
+                        <li>Negociação de venda eficiente e vantajosa</li>
+                    </ul>
+
+                    <strong>Conclusão:</strong> 
+                  <p>  Com a Lugazza Casas Exclusivas, você pode ter certeza de que receberá um investimento imobiliário de alta qualidade, focado em suas necessidades individuais. Nossa abordagem personalizada e foco em garantir um retorno financeiro garantido garantem que seu investimento seja um sucesso. Além disso, nossa equipe experiente e parceiros confiáveis garantem que seu investimento seja seguro e rentável.
+                  </p>
+                  </div>
+                  <div class="dropdown mt-3">
+                    <a class="link_canvas" href="http://bit.ly/conversarcomLu" target="_blank">Chame no WhatsApp</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- Segundo Card -->
+          <div class="col">
+            <a class="card h-100" data-bs-toggle="offcanvas" href="#offcanvas2" role="button" aria-controls="offcanvas2">
+              <img src="img/cards/arquitetura.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Arquitetura e Design de Interiores</h5>
+                <p class="card-text">A consultar</p>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary" type="button">Ver mais</button>
+                </div>
+              </div>
+            </a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas2" aria-labelledby="offcanvasLabel2">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasLabel2">Arquitetura e Design de Interiores</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <img src="img/cards/arquitetura.jfif">
+                  <p> Oferecemos serviços de arquitetura e design de interiores personalizados para atender às suas necessidades específicas. Nossa equipe de arquitetos trabalha em estreita colaboração com você para criar espaços que refletem seu estilo e funcionalidade desejados. </p> 
+
+                  <p> <strong>Detalhes Técnicos:</strong>
+                    <ul>
+                        <li>Consultoria de design de interiores</li>
+                        <li>Projetos de arquitetura personalizados</li>
+                        <li>Utilização de materiais de alta qualidade</li>
+                    </ul>
+                  </p> 
+                  <p>
+                    <strong>Benefícios:</strong>
+                    <ul>
+                        <li>Ambientes funcionais e esteticamente agradáveis</li>
+                        <li>Projetos sob medida</li>
+                        <li>Maior valorização do imóvel</li>
+                    </ul>
+                  </p> 
+                  <p>
+                    <strong>Conclusão:</strong> 
+                    Com a Lugazza Casas Exclusivas, seu sonho de um espaço perfeitamente planejado torna-se realidade. Nossa equipe de especialistas está comprometida em entregar projetos que superem suas expectativas.
+                  </div>
+                  <div class="dropdown mt-3">
+                    <a class="link_canvas" href="http://bit.ly/conversarcomLu" target="_blank">Chame no WhatsApp</a>
+                  </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- Terceiro Card -->
+          <div class="col">
+            <a class="card h-100" data-bs-toggle="offcanvas" href="#offcanvas3" role="button" aria-controls="offcanvas3">
+              <img src="img/cards/consultoria.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Consultoria Imobiliária</h5>
+                <p class="card-text">A consultar</p>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary" type="button">Ver mais</button>
+                </div>
+              </div>
+            </a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas3" aria-labelledby="offcanvasLabel3">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasLabel3">Consultoria Imobiliária</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <img src="img/cards/consultoria.jfif">
+                   <p> Nossa consultoria imobiliária oferece suporte especializado em todas as etapas do processo de compra, venda e investimento imobiliário. Contamos com uma equipe de consultores experientes para garantir as melhores condições e oportunidades para nossos clientes.
+                  </p>
+                  <p>
+                    <strong>Detalhes Técnicos:</strong>
+                    <ul>
+                        <li>Consultoria para compra e venda de imóveis</li>
+                        <li>Estratégias de investimento imobiliário</li>
+                        <li>Assessoria jurídica e financeira</li>
+                    </ul>
+                  </p>
+                  <p>
+                    <strong>Benefícios:</strong>
+                    <ul>
+                        <li>Negócios seguros e vantajosos</li>
+                        <li>Planejamento financeiro estratégico</li>
+                        <li>Apoio completo durante todo o processo</li>
+                    </ul>
+                  </p>
+                  <p>
+                    <strong>Conclusão:</strong> 
+                    Com a Lugazza Casas Exclusivas, você tem a segurança de contar com uma equipe dedicada a maximizar seus investimentos e oportunidades no mercado imobiliário.
+                  </div>
+                </p>
+                  <div class="dropdown mt-3">
+                    <a class="link_canvas" href="http://bit.ly/conversarcomLu" target="_blank">Chame no WhatsApp</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- Quarto Card -->
+          <div class="col">
+            <a class="card h-100" data-bs-toggle="offcanvas" href="#offcanvas4" role="button" aria-controls="offcanvas4">
+              <img src="img/cards/engenharia.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Projetos de Engenharia</h5>
+                <p class="card-text">A consultar</p>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary" type="button">Ver mais</button>
+                </div>
+              </div>
+            </a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas4" aria-labelledby="offcanvasLabel4">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasLabel4">Projetos de Engenharia</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <img src="img/cards/engenharia.jfif">
+                  <p>  Nossos projetos de engenharia são desenvolvidos com precisão e competência para garantir a máxima eficiência e segurança em cada construção. Trabalhamos com engenheiros qualificados para entregar resultados que superam as expectativas. 
+                  </p>
+                  <p>
+                    <strong>Detalhes Técnicos:</strong>
+                    <ul>
+                        <li>Planejamento e execução de obras</li>
+                        <li>Consultoria técnica especializada</li>
+                        <li>Utilização de tecnologias avançadas</li>
+                    </ul>
+                  </p>
+                  <p>
+                    <strong>Benefícios:</strong>
+                    <ul>
+                        <li>Construções seguras e duráveis</li>
+                        <li>Otimização de recursos e prazos</li>
+                        <li>Suporte técnico em todas as fases do projeto</li>
+                    </ul>
+                  </p>
+                  <p>
+                    <strong>Conclusão:</strong> 
+                    A Lugazza Casas Exclusivas é a escolha certa para quem busca projetos de engenharia de alta qualidade, com atenção a cada detalhe e compromisso com a excelência.
+                  </div>
+                </p>
+                  <div class="dropdown mt-3">
+                    <a class="link_canvas" href="http://bit.ly/conversarcomLu" target="_blank">Chame no WhatsApp</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- Quinto Card -->
+          <div class="col">
+            <a class="card h-100" data-bs-toggle="offcanvas" href="#offcanvas5" role="button" aria-controls="offcanvas5">
+              <img src="img/cards/6.0.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pacote 6.0</h5>
+                <p class="card-text">A consultar</p>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary" type="button">Ver mais</button>
+                </div>
+              </div>
+            </a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas5" aria-labelledby="offcanvasLabel5">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasLabel5">Pacote 6.0</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <img src="img/cards/6.0.jfif">
+                  <p> O Pacote 6.0 oferece soluções integradas para quem deseja renovar ou construir com eficiência e estilo. Combinamos serviços de arquitetura, engenharia e consultoria para proporcionar a melhor experiência possível.
+                  </p>
+                  <p>
+                    <strong>Detalhes Técnicos:</strong>
+                    <ul>
+                        <li>Soluções completas de projeto e execução</li>
+                        <li>Consultoria em todas as etapas do processo</li>
+                        <li>Uso de materiais e técnicas modernas</li>
+                    </ul>
+                  </p>
+                  <p>
+                    <strong>Benefícios:</strong>
+                    <ul>
+                        <li>Economia de tempo e recursos</li>
+                        <li>Projeto e execução coordenados</li>
+                        <li>Suporte contínuo durante toda a obra</li>
+                    </ul>
+                  </p>
+                  <p>
+                    <strong>Conclusão:</strong> 
+                    Com o Pacote 6.0 da Lugazza Casas Exclusivas, você tem a certeza de um serviço completo e integrado, desde a concepção até a finalização do seu projeto, com resultados que superam as expectativas.
+                  </div>
+                </p>
+                  <div class="dropdown mt-3">
+                    <a class="link_canvas" href="http://bit.ly/conversarcomLu" target="_blank">Chame no WhatsApp</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- Sexto Card -->
+          <div class="col">
+            <a class="card h-100" data-bs-toggle="offcanvas" href="#offcanvas6" role="button" aria-controls="offcanvas6">
+              <img src="img/cards/financeira.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Consultoria Financeira</h5>
+                <p class="card-text">A consultar</p>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary" type="button">Ver mais</button>
+                </div>
+              </div>
+            </a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas6" aria-labelledby="offcanvasLabel6">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasLabel6">Consultoria Financeira</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <img src="img/cards/financeira.jfif">
+                  <p> Nossa consultoria financeira é projetada para oferecer suporte personalizado em todos os aspectos financeiros de seus projetos imobiliários. Desde o planejamento até a execução, garantimos que suas finanças estejam em boas mãos.
+                  </p> 
+                  <p>
+                    <strong>Detalhes Técnicos:</strong>
+                    <ul>
+                        <li>Planejamento financeiro estratégico</li>
+                        <li>Consultoria em financiamento de projetos</li>
+                        <li>Gestão de orçamentos e custos</li>
+                    </ul>
+                  </p> 
+                  <p>
+                    <strong>Benefícios:</strong>
+                    <ul>
+                        <li>Redução de riscos financeiros</li>
+                        <li>Otimização de recursos</li>
+                        <li>Maior segurança em investimentos</li>
+                    </ul>
+                  </p> 
+                  <p>
+                    <strong>Conclusão:</strong> 
+                    Com a consultoria financeira da Lugazza Casas Exclusivas, você pode tomar decisões financeiras informadas e seguras, assegurando o sucesso de seus projetos do início ao fim.
+                  </div>
+                </p>
+                  <div class="dropdown mt-3">
+                    <a class="link_canvas" href="http://bit.ly/conversarcomLu" target="_blank">Chame no WhatsApp</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção da Galeria de Imagens -->
+<section class="container_main_about_3">
+  <div class="container_text_main_about_3"> 
+    <h1 class="container_text_main_title_about_3">Conheça algumas obras Lugazza</h1>
+    <div class="gallery">
+        <!-- Imagens da galeria -->
+        <img class="img_gallery" src="img/casas/casa4.jpg" data-bs-toggle="modal" data-bs-target="#modalObra1" alt="Obra 1">
+        <img class="img_gallery" src="img/casas/casa7.jpg" data-bs-toggle="modal" data-bs-target="#modalObra2" alt="Obra 2">
+        <img class="img_gallery" src="img/casas/casa11.jpg" data-bs-toggle="modal" data-bs-target="#modalObra3" alt="Obra 3">
+        <img class="img_gallery" src="img/casas/casa13.jpg" data-bs-toggle="modal" data-bs-target="#modalObra4" alt="Obra 4">
+        <img class="img_gallery" src="img/casas/casa14.jpg" data-bs-toggle="modal" data-bs-target="#modalObra5" alt="Obra 5">
+        <img class="img_gallery" src="img/casas/casa10.jpg" data-bs-toggle="modal" data-bs-target="#modalObra6" alt="Obra 6">
+        <img class="img_gallery" src="img/casas/casa16.jpg" data-bs-toggle="modal" data-bs-target="#modalObra7" alt="Obra 7">
+        <img class="img_gallery" src="img/casas/casa23.jpg" data-bs-toggle="modal" data-bs-target="#modalObra8" alt="Obra 8">
+        <img class="img_gallery" src="img/casas/casa26.jpg" data-bs-toggle="modal" data-bs-target="#modalObra9" alt="Obra 9">
+        <img class="img_gallery" src="img/casas/casa31.jpg" data-bs-toggle="modal" data-bs-target="#modalObra10" alt="Obra 10">
+        <img class="img_gallery" src="img/casas/casa34.jpg" data-bs-toggle="modal" data-bs-target="#modalObra11" alt="Obra 11">
+        <img class="img_gallery" src="img/casas/casa20.jpg" data-bs-toggle="modal" data-bs-target="#modalObra11" alt="Obra 12">
+        <img class="img_gallery" src="img/casas/casa35.jpg" data-bs-toggle="modal" data-bs-target="#modalObra11" alt="Obra 13">
+        <img class="img_gallery" src="img/casas/casa28.jpg" data-bs-toggle="modal" data-bs-target="#modalObra11" alt="Obra 14">
+        <img class="img_gallery" src="img/casas/casa30.jpg" data-bs-toggle="modal" data-bs-target="#modalObra11" alt="Obra 15">
+    </div>
+  </div>
+</section>
+
+<!-- Modais para as imagens -->
+<div class="modal fade" id="modalObra1" tabindex="-1" aria-labelledby="modalObra1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa4.jpg" class="img-fluid" alt="Obra 1">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Repetir o modal para cada imagem -->
+<div class="modal fade" id="modalObra2" tabindex="-1" aria-labelledby="modalObra2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa7.jpg" class="img-fluid" alt="Obra 2">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalObra3" tabindex="-1" aria-labelledby="modalObra3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa11.jpg" class="img-fluid" alt="Obra 3">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Repetir para as outras imagens -->
+<!-- Modal Obra 4 -->
+<div class="modal fade" id="modalObra4" tabindex="-1" aria-labelledby="modalObra4Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa13.jpg" class="img-fluid" alt="Obra 4">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Obra 5 -->
+<div class="modal fade" id="modalObra5" tabindex="-1" aria-labelledby="modalObra5Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa14.jpg" class="img-fluid" alt="Obra 5">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Obra 6 -->
+<div class="modal fade" id="modalObra6" tabindex="-1" aria-labelledby="modalObra6Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa10.jpg" class="img-fluid" alt="Obra 6">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Obra 7 -->
+<div class="modal fade" id="modalObra7" tabindex="-1" aria-labelledby="modalObra7Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa16.jpg" class="img-fluid" alt="Obra 7">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Obra 8 -->
+<div class="modal fade" id="modalObra8" tabindex="-1" aria-labelledby="modalObra8Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa23.jpg" class="img-fluid" alt="Obra 8">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Obra 9 -->
+<div class="modal fade" id="modalObra9" tabindex="-1" aria-labelledby="modalObra9Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa26.jpg" class="img-fluid" alt="Obra 9">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Obra 10 -->
+<div class="modal fade" id="modalObra10" tabindex="-1" aria-labelledby="modalObra10Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa31.jpg" class="img-fluid" alt="Obra 10">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Obra 11 -->
+<div class="modal fade" id="modalObra11" tabindex="-1" aria-labelledby="modalObra11Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa34.jpg" class="img-fluid" alt="Obra 11">
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modal Obra 12 -->
+
+<div class="modal fade" id="modalObra10" tabindex="-1" aria-labelledby="modalObra10Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa20.jpg" class="img-fluid" alt="Obra 10">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Obra 13 -->
+
+<div class="modal fade" id="modalObra10" tabindex="-1" aria-labelledby="modalObra10Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa35.jpg" class="img-fluid" alt="Obra 10">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Obra 14 -->
+
+<div class="modal fade" id="modalObra10" tabindex="-1" aria-labelledby="modalObra10Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa28.jpg" class="img-fluid" alt="Obra 10">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Obra 15 -->
+
+<div class="modal fade" id="modalObra10" tabindex="-1" aria-labelledby="modalObra10Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/casas/casa30.jpg" class="img-fluid" alt="Obra 10">
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-column">
+      <h5>Endereço</h5>
+      <ul>
+          <li><strong>Principal:</strong></li>
+          <a  class="link_adress_footer"  href="https://www.google.com/maps/place/R.+Maria+da+Concei%C3%A7%C3%A3o+de+Andrade,+324+-+Morada+da+Colina,+Uberl%C3%A2ndia+-+MG,+38411-151,+Brazil/@-18.9433085,-48.2846064,15z/data=!4m5!3m4!1s0x94a44548473c1023:0xb2c13ec0e827b227!8m2!3d-18.9433085!4d-48.2846064" target="_blank">
+              <li>R. Maria da Conceição de Andrade, 324</li>
+              <li>(Sala 6), Morada da Colina</li>
+              <li>Uberlândia, MG, 38411-151</li>
+              <li>Galeria Spazio Carioca</li>
+          </a>
+      </ul>
+  </div>
+  <div class="footer-column">
+      <h5>Contato</h5>
+      <ul>
+          <li>
+              <a href="tel:+553484315283">
+                  <img src="img/icones/telefone.png" width="28vh" height="30vh"> 
+                  Comercial: (34) 8431-5283
+              </a>
+          </li>
+          <li><a href="mailto:lugazzacasasexclusivas@gmail.com"><img src="img/icones/email.png" width="30vh" height="30vh"> Email: lugazzacasasexclusivas@gmail.com</a></li>
+          <li><a href="http://bit.ly/conversarcomLu" target="_blank"><img src="img/icones/whatsapp.png" width="35vh" height="35vh"> Whatsapp: (34) 8431-5283</a></li>
+      </ul>
+  </div>
+  <div class="footer-column">
+      <h5>Nossas redes</h5>
+      <ul>
+          <li><a href="https://www.instagram.com/lugazzaconstrutora/"><img src="img/icones/instagram.png" width="30vh" height="30vh"></a></li>
+      </ul>
+  </div>
+</footer>
+
+<div class="map-container">
+  <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15094.922985625704!2d-48.2846064!3d-18.9433085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44548473c1023%3A0xb2c13ec0e827b227!2sLugazza%20Casas%20Exclusivas%20-%20Construtora!5e0!3m2!1spt-BR!2sbr!4v1724089211556!5m2!1spt-BR!2sbr" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</body>
+</html>

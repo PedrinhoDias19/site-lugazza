@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox - Lugazza</title>
+    <link rel="stylesheet" href="styles_about.css">
+    <style>
+        .chat-container {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            background-color: #470705;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .chat-header {
+            background-color: #7c0203;
+            color: #ffbf00;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }
+
+        .chat-content {
+            background-color: white;
+            height: 300px;
+            overflow-y: auto;
+            color: black;
+            padding: 10px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .chat-input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-header">
+        <h2>Fale com Lu</h2>
+    </div>
+    <div class="chat-content" id="chat-content">
+        <p><strong>Lugazza:</strong> Bem-vindo ao atendimento virtual da Lugazza! Como podemos ajudar?</p>
+    </div>
+    <input type="text" id="chat-input" class="chat-input" placeholder="Digite sua mensagem..." onkeydown="sendMessage(event)">
+</div>
+
+<script>
+    function sendMessage(event) {
+        if (event.key === "Enter") {
+            const chatInput = document.getElementById('chat-input');
+            const message = chatInput.value;
+            if (message.trim() !== "") {
+                const chatContent = document.getElementById('chat-content');
+                const newMessage = `<p><strong>Você:</strong> ${message}</p>`;
+                chatContent.innerHTML += newMessage;
+                chatInput.value = ""; // Limpa o campo de input
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

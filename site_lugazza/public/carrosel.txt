@@ -1,0 +1,97 @@
+<div class="carousel">
+            <div id="carouselExample" class="carousel slide">
+              <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/casa4.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/casa5.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/casa6.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+
+                   <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15094.922985625704!2d-48.2846064!3d-18.9433085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44548473c1023%3A0xb2c13ec0e827b227!2sLugazza%20Casas%20Exclusivas%20-%20Construtora!5e0!3m2!1spt-BR!2sbr!4v1724089211556!5m2!1spt-BR!2sbr" width="200vh" height="200vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Investimentos Imobiliários</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div>
+                        <img src="img/cards/investimentos.jfif">
+                        <p>Nossos Investimentos Imobiliários oferecem projetos e construções personalizados para investidores, com foco em qualidade e retorno financeiro garantido. Com uma equipe experiente e parceiros confiáveis, garantimos que seu investimento imobiliário seja um sucesso, desde a concepção até a negociação de venda.</p>
+
+<p> <strong>Detalhes Técnicos:</strong>
+
+Projetos e construções personalizados para investidores Equipe experiente e parceiros confiáveis Garantia de qualidade e retorno financeiro </p> 
+
+<p>
+<strong>Benefícios:</strong>
+
+<ol>
+<li>Investimento seguro e rentável</li>
+<li> Projetos e construções de alta qualidade</li>
+<li> Negociação de venda eficiente e vantajosa</li>
+</ul>
+</p>
+<p>
+<strong>Comparação com a Concorrência: </strong> 
+<ul>
+<li> Nossos Investimentos Imobiliários se destacam pela personalização e pelo foco em garantir um retorno financeiro garantido. Enquanto muitas empresas oferecem projetos genéricos, nós nos concentramos em entender as necessidades dos investidores e criar um projeto que atenda a todas elas.
+</ol>
+</p>
+</p> 
+
+<p>
+<strong>Conclusão:</strong> 
+Com a Lugazza Casas Exclusivas, você pode ter certeza de que receberá um investimento imobiliário de alta qualidade, focado em suas necessidades individuais. Nossa abordagem personalizada e foco em garantir um retorno financeiro garantido garantem que seu investimento seja um sucesso. Além disso, nossa equipe experiente e parceiros confiáveis garantem que seu investimento seja seguro e rentável.
+</p>
+                      </div>
+                      <div class="dropdown mt-10">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                          Dropdown button
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>

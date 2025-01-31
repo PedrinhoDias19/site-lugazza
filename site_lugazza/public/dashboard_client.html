@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Cliente - Lugazza</title>
+    <link rel="stylesheet" href="styles_about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="menu">
+        <a class="menu_item_img" href="index.html">
+            <img class="image" src="img/logo/logo_lugazza.png" width="20%">
+        </a>
+        <a class="menu_item" href="index.html">Home</a>
+        <a class="menu_item" href="about.html">Sobre Nós</a>
+        <a class="menu_item" href="orcamento.html">Orçamentos</a>
+        <a class="menu_item" href="dashboard_client.html">Área do Cliente</a>
+    </nav>
+</header>
+
+<div class="container mt-5">
+    <h1 class="text-center">Dashboard do Cliente</h1>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Resumo do Progresso da Obra</h5>
+            <p class="card-text">Progresso atual da obra: <strong id="progresso-obra">Carregando...</strong></p>
+            <p class="card-text">Última atualização: <strong id="data-atualizacao">Carregando...</strong></p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Imagens Recentes do Projeto</h5>
+            <div class="row" id="imagens-projeto">
+                <!-- Imagens serão carregadas aqui -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Botões com Imagens -->
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/relatorios.jpg" class="card-img-top" alt="Relatórios">
+                <div class="card-body">
+                    <h5 class="card-title">Ver Relatórios</h5>
+                    <a href="relatorios.html" class="btn btn-primary">Acessar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/chatbox.jpg" class="card-img-top" alt="Chatbox">
+                <div class="card-body">
+                    <h5 class="card-title">Acessar Chatbox</h5>
+                    <a href="chatbox.html" class="btn btn-primary">Acessar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/sugestoes.jpg" class="card-img-top" alt="Mural de Sugestões">
+                <div class="card-body">
+                    <h5 class="card-title">Mural de Sugestões</h5>
+                    <a href="sugestoes.html" class="btn btn-primary">Acessar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer com Mapa -->
+<footer class="footer mt-5">
+    <div class="footer-column">
+        <h5>Endereço</h5>
+        <ul>
+            <li><strong>Principal:</strong></li>
+            <li>R. Maria da Conceição de Andrade, 324</li>
+            <li>Morada da Colina, Uberlândia</li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h5>Contato</h5>
+        <ul>
+            <li>Comercial: (34) 8431-5283</li>
+            <li>Email: lugazzacasasexclusivas@gmail.com</li>
+            <li>Whatsapp: (34) 8431-5283</li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h5>Nossas Redes</h5>
+        <ul>
+            <li><a href="https://www.instagram.com/lugazzaconstrutora/">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
+
+<div class="map-container mt-4">
+    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15094.922985625704!2d-48.2846064!3d-18.9433085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44548473c1023%3A0xb2c13ec0e827b227!2sLugazza%20Casas%20Exclusivas%20-%20Construtora!5e0!3m2!1spt-BR!2sbr!4v1724089211556" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    fetch('/api/get-project-info')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('progresso-obra').innerText = `${data.progress}% concluído`;
+            document.getElementById('data-atualizacao').innerText = data.lastUpdated;
+
+            const imagensProjeto = document.getElementById('imagens-projeto');
+            imagensProjeto.innerHTML = '';
+            data.images.forEach((img, index) => {
+                const col = document.createElement('div');
+                col.className = 'col-4';
+                const image = document.createElement('img');
+                image.src = img;
+                image.alt = `Imagem recente ${index + 1}`;
+                image.className = 'img-fluid';
+                col.appendChild(image);
+                imagensProjeto.appendChild(col);
+            });
+        })
+        .catch(err => {
+            console.error('Erro ao carregar as informações do projeto:', err);
+        });
+});
+</script>
+</body>
+</html>
