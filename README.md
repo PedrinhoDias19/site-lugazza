@@ -13,7 +13,7 @@
 
 * MongoDB
 
-*AWS S3
+* AWS S3
 
 
 ## Feito por:
